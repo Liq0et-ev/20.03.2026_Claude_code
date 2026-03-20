@@ -1,0 +1,64 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Submission {
+  Id                   String           @id @default(cuid())
+  CreatedAt            DateTime         @default(now())
+  UpdatedAt            DateTime         @updatedAt
+  BuyerName            String
+  BuyerEmail           String
+  Comment              String
+  OriginalFilePath     String
+  ProcessedFilePath    String?
+  PdfFilePath          String?
+  DxfFilePath          String?
+  Status               SubmissionStatus @default(PENDING)
+  AiVerificationPassed Boolean?
+  AiVerificationResult String?
+  ReviewedAt           DateTime?
+  ReviewedBy           String?
+  ReviewApproved       Boolean?
+  ReviewNotes          String?
+  Department           Department?
+  RoutedAt             DateTime?
+  FailureReason        String?
+  Notifications        Notification[]
+}
+
+model Notification {
+  Id           String     @id @default(cuid())
+  CreatedAt    DateTime   @default(now())
+  Submission   Submission @relation(fields: [SubmissionId], references: [Id])
+  SubmissionId String
+  Department   Department
+  Message      String
+  Read         Boolean    @default(false)
+  ReadAt       DateTime?
+}
+
+enum SubmissionStatus {
+  PENDING
+  PROCESSING
+  PROCESSING_FAILED
+  AWAITING_AI
+  AI_REVIEWING
+  AI_FAILED
+  AWAITING_REVIEW
+  REVIEW_FAILED
+  ROUTING
+  ROUTED
+  COMPLETED
+}
+
+enum Department {
+  TINSMITH
+  ELECTRICIAN
+  CONSTRUCTION
+  UNKNOWN
+}
