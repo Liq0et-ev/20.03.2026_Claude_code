@@ -1,7 +1,8 @@
 <h2>1.Business Objective</h2>
 <br><br>
 Uzņēmumam ir jāizveido sistemu, kurā būs:
-1. pircēja shemas, koncepta vai papīra uzzimēta attēlu apstrade un formatēšāna pēc EU standartiem .
+<br><br>
+1. Pircēja shemas, koncepta vai papīra uzzimēta attēlu apstrade un formatēšāna pēc EU standartiem .
    <br>
    (P.S. Attēlu apstrāde. foto no telefona, ehniskās rasējumu standarti ISO 128, CAD)
    <br><br>
@@ -18,3 +19,5 @@ jomas — skardnieks, elektriķis, būvniecība. Nosūtit un iekšejo sistemu.
 Sistēma saprot, kurai jomai pieder attēls, to izvēlas pircejs rakstot zem attēla piemēram: skardnieks.
 Sistēma saprot, 
 kurai jomai pieder attēls to arī uzrada pircejs komentaros piemēram Elektro)
+
+2.Agent Role De
