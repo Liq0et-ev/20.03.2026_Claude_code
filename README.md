@@ -12,12 +12,12 @@ Uzņēmumam ir jāizveido sistemu, kurā būs:
    AI pārbauda, bet ari dot lai cilveks to ari apstiprinaja, ja verifikācija neiztur,
     tad atgriezt atpakaļ pircējam ar kļūdas ziņojumu.)
 <br><br>
-3. Automatiska parsūtīšana tieši darbiniekiem, kuri ir saistīti ar to jomu, kad jau notika verifikacija.
+/*3. Automatiska parsūtīšana tieši darbiniekiem, kuri ir saistīti ar to jomu, kad jau notika verifikacija.
 <br>
 (P.S. Maršrutēšana uz darbiniekiem: darbinieku struktūra ir sekojoša
 jomas — skardnieks, elektriķis, būvniecība. Nosūtit un iekšejo sistemu. 
 Sistēma saprot, kurai jomai pieder attēls, to izvēlas pircejs rakstot zem attēla piemēram: skardnieks.
 Sistēma saprot, 
 kurai jomai pieder attēls to arī uzrada pircejs komentaros piemēram Elektro)
-
+*/
 2.Agent Role De
