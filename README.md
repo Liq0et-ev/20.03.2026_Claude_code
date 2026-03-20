@@ -1,5 +1,5 @@
 <h2>1.Business Objective</h2>
-<br>
+<br><br>
 Uzņēmumam ir jāizveido sistemu, kurā būs:
 1. pircēja shemas, koncepta vai papīra uzzimēta attēlu apstrade un formatēšāna pēc EU standartiem .
    <br>
